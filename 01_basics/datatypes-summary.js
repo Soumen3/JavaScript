@@ -38,7 +38,35 @@ const myFunction=function(){
     console.log("hey coder");
 }
 myFunction()
-9999999999999999999999999999
 console.log(typeof cars);
 console.log(typeof myObj);
 console.log(typeof myFunction);
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------- //
+
+// Stack (Primitive data),   Heap(Non-primitive data)
+let myName="Soumen Samanta"
+let myACccName=myName
+myACccName="Programmer"
+
+console.log(myName);
+console.log(myACccName);
+
+
+
+let user={
+    email:"soumen@google.com",
+    upi:'soumen@paytm',
+}
+
+let modifiedUser=user
+modifiedUser.email="soumen@netflix.com"
+console.log(user.email);
+console.log(modifiedUser.email);
