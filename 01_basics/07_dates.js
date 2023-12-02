@@ -23,3 +23,9 @@ console.log(Math.floor(timeStamp/1000));
 
 let newDate=new Date()
 
+console.log(newDate.toLocaleString('default',{
+    weekday:'long',
+    year:'numeric',
+    month:'long',
+    day:'numeric'
+}));
