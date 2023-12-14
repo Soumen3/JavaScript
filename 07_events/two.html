@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #201f1f;;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello programmer!</h1>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    setTimeout(function(){
+        console.log("Soumen Samanta");
+        
+    },2000)
+
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML +=" I am learning Java Script"
+    }
+    const change=setTimeout(changeText,2000)
+    document.getElementById('stop').addEventListener('click',()=>{
+        clearTimeout(change); //clear the timeout
+        console.log("Text edit Stopped");
+        
+    })
+
+
+</script>
+
+</html>
